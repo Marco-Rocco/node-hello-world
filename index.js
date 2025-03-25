@@ -1,4 +1,8 @@
-const message = process.argv[2]
+let message = ''
+
+for (let i = 2; i < process.argv.length; i++) {
+    message = process.argv[i];
+}
 
 console.log(message);
 
